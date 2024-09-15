@@ -134,6 +134,33 @@
       </section>
 
       <section>
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué estudios tienes?</summary>
+          <p>
+            Estudie en el Politecnico Superior de Oxidente y he estado
+            estudiando de manera autodidacta alrededor de 3 años
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cuales son tus hobbies?</summary>
+          <p>
+            En mis tiempos libres estudio nuevas tecnologias y entreno tiro con
+            arco
+          </p>
+        </details>
+
+        <details>
+            <summary>¿Cual es tu lenguaje favorito?</summary>
+            <p>
+              Mi lenguaje favorito es Java por su paradigma orientado a objetos y su tipado fuerte
+            </p>
+          </details>
+      </section>
+
+      <section>
         <h2>Formulario de contacto</h2>
         <form action="/" method="post">
           <fieldset>
@@ -164,11 +191,49 @@
           <fieldset>
             <legend>Informacion Adicional</legend>
             <div>
-              <label> Telefono:
-                <input type="tel" name="phone" placeholder="3111111111" required>
+              <label>
+                Telefono:
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="3111111111"
+                  pattern="[0-9]{10}"
+                  required
+                />
               </label>
             </div>
           </fieldset>
+          <fieldset>
+            <div>
+              <label
+                >Otros:
+                <select name="why" id="why">
+                  <option value="1">Trabajo</option>
+                  <option value="2">Duda</option>
+                  <option value="3">Más información</option>
+                </select>
+              </label>
+            </div>
+            <div>
+              <label>
+                ¿Aceptas los terminos y condiciones?
+                <input type="checkbox" name="terms" required />
+              </label>
+            </div>
+
+            <div>
+              <datalist id="languages">
+                <option value="Java"></option>
+                <option value="Python"></option>
+                <option value="JavaScript"></option>
+              </datalist>
+              <label>
+                ¿Con que lenguaje quieres que te ayude?
+                <input list="languages" name="languages" required />
+              </label>
+            </div>
+          </fieldset>
+
           <input type="submit" value="Enviar Contacto" />
         </form>
       </section>
