@@ -49,6 +49,23 @@
       </nav>
     </header>
 
+    <button id="show">Easter Egg</button>
+    <dialog id="dialog">
+      <p><strong>Bienvenido a mi portafolio</strong></p>
+      <p>Este funcinamiento solo tiene 6 lineas de Js</p>
+      <button id="hide">cerrar</button>
+    </dialog>
+
+    <script>
+      window.show.addEventListener("click", () => {
+        window.dialog.showModal();
+      })
+
+      window.hide.addEventListener("click", () => {
+        window.dialog.close();
+      })
+    </script>
+
     <main>
       <p>
         <strong>Ingeniero de desarrollo Profesional</strong> en Carvajal
@@ -153,11 +170,12 @@
         </details>
 
         <details>
-            <summary>¿Cual es tu lenguaje favorito?</summary>
-            <p>
-              Mi lenguaje favorito es Java por su paradigma orientado a objetos y su tipado fuerte
-            </p>
-          </details>
+          <summary>¿Cual es tu lenguaje favorito?</summary>
+          <p>
+            Mi lenguaje favorito es Java por su paradigma orientado a objetos y
+            su tipado fuerte
+          </p>
+        </details>
       </section>
 
       <section>
@@ -234,7 +252,7 @@
             </div>
           </fieldset>
 
-          <input type="submit" value="Enviar Contacto" />
+          <button>Enviar Contacto</button>
         </form>
       </section>
     </main>
