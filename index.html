@@ -37,10 +37,23 @@
         /* color: rgba(0, 0, 255, 0.541); legacy*/ 
         /* color: rgb(0 0 255 / 54%); recomendado*/
         /* color: hsla(240, 100%, 50%, 0.54) */
-        color:oklab(0.5, 0, 0.5, 0.5)
+        /* color:oklab(0.5, 0, 0.5, 0.5) */
+        color : #09f;;
       }
       body {
         background-color: #a5ccf1;
+        font-family: Tahoma, sans-serif;
+      }
+      .link {
+        color: red;
+      }
+      #show {
+        background-color: #09f;
+        color: white;
+        border: none;
+      }
+      .description {
+        border: 1px solid red;
       }
     </style>
   </head>
@@ -50,10 +63,10 @@
       <h1>Portafolio de leonard</h1>
 
       <nav>
-        <a href="#experiencia">Experiencia</a>
+        <a class="link" href="#experiencia">Experiencia</a>
         <!--Enlaces internos-->
-        <a href="#proyectos">Proyectos</a>
-        <a
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a class="link"
           href="https://github.com/Leonard-Hernandez"
           target="_blank"
           rel="noreferrer"
@@ -80,7 +93,7 @@
     </script>
 
     <main>
-      <p>
+      <p class ="description">
         <strong>Ingeniero de desarrollo Profesional</strong> en Carvajal
         Tecnologia y Servicios. Autodidacta y apasionado
       </p>
