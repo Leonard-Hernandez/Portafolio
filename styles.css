@@ -1,0 +1,42 @@
+h1 {
+    /* color: rgba(0, 0, 255, 0.541); legacy*/ 
+    /* color: rgb(0 0 255 / 54%); recomendado*/
+    /* color: hsla(240, 100%, 50%, 0.54) */
+    /* color:oklab(0.5, 0, 0.5, 0.5) */
+    color : #09f;;
+  }
+  body {
+    background-color: #a5ccf1;
+    font-family: Tahoma, sans-serif;
+  }
+  .link {
+    color: red;
+  }
+
+  /*pseudo clase hover*/
+  .link:hover {
+    color:lightcoral;
+    outline: 1px solid red;        
+  }
+
+  input:focus{
+    outline: 1px solid blue;
+  }
+
+  .link:active {
+    outline: 1px solid blue;
+  }
+
+  #show {
+    background-color: #09f;
+    color: white;
+    border: none;
+  }
+
+  li:first-child{
+    color: red;
+  }
+
+  li:last-child{
+    color: blue;
+  }
